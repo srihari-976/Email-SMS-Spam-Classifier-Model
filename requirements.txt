@@ -1,5 +1,6 @@
-flask>=2.0.0
+streamlit>=1.37.1
 nltk>=3.8.1
 scikit-learn>=1.4.0
 pandas>=2.2.0
 numpy>=1.26.0
+plotly>=5.18.0
