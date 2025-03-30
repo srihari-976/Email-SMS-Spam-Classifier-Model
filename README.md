@@ -2,6 +2,12 @@
 
 An intelligent spam classification system that uses machine learning to identify spam messages with high accuracy. The system features a modern dark-themed UI and provides detailed analysis of message characteristics.
 
+## Deployed Application
+
+🚀 **Check out the live version of Email SMS Spam Classifier Model!** 🚀
+
+[![Live Application](https://img.shields.io/badge/Live%20Application-Click%20Here-brightgreen)](https://spam-mail-detector.streamlit.app/)
+
 ## 🚀 Features
 
 - Real-time spam detection
@@ -110,9 +116,6 @@ Feel free to contribute to this project by:
 3. Making your changes
 4. Submitting a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🙏 Acknowledgments
 
