@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email/SMS Spam Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📧 Email/SMS Spam Classifier</h1>
+            <p class="subtitle">Enter your message below to check if it's spam or not</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <textarea id="message" placeholder="Enter your message here..." rows="6"></textarea>
+                <button id="predict-btn" onclick="predict()">🔍 Predict</button>
+            </div>
+
+            <div id="results" class="results-section" style="display: none;">
+                <h2>Results</h2>
+                <div id="result-box" class="result-box">
+                    <h2 id="result-text"></h2>
+                </div>
+
+                <div id="gauge-chart"></div>
+                
+                <div id="confidence-text" class="confidence-text"></div>
+
+                <div id="indicators" class="indicators-section">
+                    <h3>Suspicious Features Detected</h3>
+                    <div id="indicators-list" class="indicators-list"></div>
+                </div>
+
+                <div class="processed-text-section">
+                    <button onclick="toggleProcessedText()" class="toggle-btn">View processed text</button>
+                    <div id="processed-text" class="processed-text" style="display: none;"></div>
+                </div>
+            </div>
+
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Analyzing message...</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 
