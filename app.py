@@ -131,6 +131,3 @@ def predict():
             'processed_text': transformed_sms,
             'indicators': indicators
         })
-
-if __name__ == '__main__':
-    app.run(debug=True)
